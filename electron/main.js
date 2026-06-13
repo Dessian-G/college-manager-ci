@@ -1,6 +1,6 @@
 const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron')
 const path = require('path')
-const isDev = process.env.NODE_ENV !== 'production' && !process.env.ELECTRON_PACKAGED
+const isDev = !app.isPackaged
 
 let mainWindow
 
