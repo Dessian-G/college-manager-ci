@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(rm -rf node_modules/electron)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(taskkill /F /IM electron.exe /T)",
+      "Bash(taskkill /F /IM node.exe /T)",
+      "Bash(sleep 20 && cat /tmp/dev3.txt)",
+      "Read(//tmp/**)",
+      "Bash(ELECTRON_RUN_AS_NODE=1 node scripts/rebuild.js)"
+    ]
+  }
+}
